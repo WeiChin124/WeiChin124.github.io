@@ -230,7 +230,7 @@ export default function App() {
             <p>IN PROGRESS</p>
             <h3>Master of Computer Science</h3>
             <span>Universiti Sains Malaysia</span>
-            <strong>CGPA 3.73 / 4.00</strong>
+            <strong>CGPA 3.7300 / 4.00</strong>
           </article>
           <article data-reveal>
             <p>FOUNDATION</p>
