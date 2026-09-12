@@ -40,6 +40,19 @@ function ArrowIcon() {
 export default function App() {
   const [activeLayer, setActiveLayer] = useState(2);
   const [menuOpen, setMenuOpen] = useState(false);
+  const [emailCopied, setEmailCopied] = useState(false);
+
+  const copyEmail = async () => {
+    const emailAddress = "sawweichin0412@gmail.com";
+
+    try {
+      await navigator.clipboard.writeText(emailAddress);
+      setEmailCopied(true);
+      window.setTimeout(() => setEmailCopied(false), 2000);
+    } catch {
+      window.prompt("Copy this email address:", emailAddress);
+    }
+  };
 
   useEffect(() => {
     const updateScroll = () => {
@@ -182,9 +195,9 @@ export default function App() {
           </div>
           <div className="impact-grid">
             <article data-reveal><span>12 → 16</span><h3>Android migration</h3><p>Advanced a production platform through four Android generations for next-generation chipset support.</p></article>
-            <article data-reveal><span>−2 MONTHS</span><h3>Early promotion</h3><p>Progressed from Graduate Trainee to Software Engineer two months ahead of schedule.\n</p></article>
-            <article data-reveal><span>BOOT + PWR</span><h3>System efficiency</h3><p>Resolved cross-layer bottlenecks to improve startup performance and energy use.\n</p></article>
-            <article data-reveal><span>SW AINS</span><h3>Clearer audio</h3><p>Built C/C++ noise-suppression capability to strengthen voice clarity in demanding environments.\n</p></article>
+            <article data-reveal><span>−2 MONTHS</span><h3>Early promotion</h3><p>Progressed from Graduate Trainee to Software Engineer two months ahead of schedule.</p></article>
+            <article data-reveal><span>BOOT + PWR</span><h3>System efficiency</h3><p>Resolved cross-layer bottlenecks to improve startup performance and energy use.</p></article>
+            <article data-reveal><span>SW AINS</span><h3>Clearer audio</h3><p>Built C/C++ noise-suppression capability to strengthen voice clarity in demanding environments.</p></article>
           </div>
         </div>
       </section>
@@ -236,6 +249,9 @@ export default function App() {
           <span>I&apos;m open to Software Engineer and Software Developer opportunities.</span>
           <div className="contact-actions">
             <a className="primary-action" href="mailto:sawweichin0412@gmail.com">Start a conversation <ArrowIcon /></a>
+            <button className="text-action copy-email" type="button" onClick={copyEmail} aria-live="polite">
+              {emailCopied ? "Email copied!" : "Copy email"}
+            </button>
             <a className="text-action" href="https://github.com/WeiChin124" target="_blank" rel="noreferrer">GitHub <ArrowIcon /></a>
             <a className="text-action" href="https://www.linkedin.com/in/wei-chin-saw-a600a72b8/" target="_blank" rel="noreferrer">LinkedIn <ArrowIcon /></a>
           </div>

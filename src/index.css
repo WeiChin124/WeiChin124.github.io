@@ -58,6 +58,7 @@ button { font: inherit; }
 .primary-action { padding: 0 18px; background: linear-gradient(105deg, var(--cyan), #8ba6ff); color: #04101b; box-shadow: 10px 10px 0 rgba(94, 181, 255, .12); transition: transform .2s ease, box-shadow .2s ease; }
 .primary-action:hover, .primary-action:focus-visible { transform: translate(-2px, -2px); box-shadow: 14px 14px 0 rgba(94, 181, 255, .16); }
 .text-action { color: #dce7fb; border-bottom: 1px solid #465474; }
+.copy-email { padding: 0; border: 0; border-bottom: 1px solid #465474; background: transparent; cursor: pointer; }
 .text-action span, .profile-links span { color: var(--cyan); font-size: 1rem; }
 .profile-links { margin-top: 22px; display: flex; flex-wrap: wrap; gap: 10px; }
 .profile-links a { min-height: 34px; padding: 0 11px; display: inline-flex; align-items: center; gap: 8px; border: 1px solid rgba(132, 167, 255, .2); background: rgba(5, 9, 24, .66); color: #9facc5; font: 650 .68rem/1 "Cascadia Code", Consolas, monospace; transition: color .2s ease, border-color .2s ease; }
