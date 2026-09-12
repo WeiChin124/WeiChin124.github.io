@@ -90,7 +90,7 @@ export default function App() {
 
       <section id="home" className="hero section-shell">
         <div className="hero-copy" data-reveal>
-          <p className="signal-label"><span>SYS.ENG</span> / PENANG, MY</p>
+          <p className="signal-label"><span>SW.ENGR</span> / PENANG, MY</p>
           <h1>
             Engineering
             <span>across every layer.</span>
@@ -182,9 +182,9 @@ export default function App() {
           </div>
           <div className="impact-grid">
             <article data-reveal><span>12 → 16</span><h3>Android migration</h3><p>Advanced a production platform through four Android generations for next-generation chipset support.</p></article>
-            <article data-reveal><span>−2 MO</span><h3>Early promotion</h3><p>Progressed from Graduate Trainee to Software Engineer two months ahead of schedule.</p></article>
-            <article data-reveal><span>BOOT + PWR</span><h3>System efficiency</h3><p>Resolved cross-layer bottlenecks to improve startup performance and energy use.</p></article>
-            <article data-reveal><span>SW AINS</span><h3>Clearer audio</h3><p>Built C/C++ noise-suppression capability to strengthen voice clarity in demanding environments.</p></article>
+            <article data-reveal><span>−2 MONTHS</span><h3>Early promotion</h3><p>Progressed from Graduate Trainee to Software Engineer two months ahead of schedule.\n</p></article>
+            <article data-reveal><span>BOOT + PWR</span><h3>System efficiency</h3><p>Resolved cross-layer bottlenecks to improve startup performance and energy use.\n</p></article>
+            <article data-reveal><span>SW AINS</span><h3>Clearer audio</h3><p>Built C/C++ noise-suppression capability to strengthen voice clarity in demanding environments.\n</p></article>
           </div>
         </div>
       </section>
