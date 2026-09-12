@@ -37,4 +37,4 @@ The workflow in `.github/workflows/deploy.yml` builds and publishes the site whe
 - `src/components/SystemScene.tsx` — interactive 3D system architecture
 - `src/index.css` — visual system, responsive styling, and motion
 - `public/profile-photo.jpeg` — profile photo
-- `public/resume.pdf` — downloadable résumé
+- `public/resume_v1.1.pdf` — downloadable résumé

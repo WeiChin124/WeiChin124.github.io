@@ -113,7 +113,7 @@ export default function App() {
           </p>
           <div className="hero-actions">
             <a className="primary-action" href="#experience">Enter portfolio <span>↓</span></a>
-            <a className="text-action" href="/resume.pdf" target="_blank" rel="noreferrer">Résumé <ArrowIcon /></a>
+            <a className="text-action" href="/resume_v1.1.pdf.pdf" target="_blank" rel="noreferrer">Résumé <ArrowIcon /></a>
           </div>
           <div className="profile-links" aria-label="Professional profiles">
             <a href="https://github.com/WeiChin124" target="_blank" rel="noreferrer">GitHub <ArrowIcon /></a>
