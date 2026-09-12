@@ -3,11 +3,11 @@ import { lazy, Suspense, useEffect, useState } from "react";
 const SystemScene = lazy(() => import("./components/SystemScene"));
 
 const systemLayers = [
-  { code: "APP", label: "Application", detail: "React Native · TypeScript" },
-  { code: "FWK", label: "Framework", detail: "Kotlin · Android APIs" },
-  { code: "SYS", label: "System", detail: "AOSP · Services · Performance" },
-  { code: "KRN", label: "Kernel", detail: "C/C++ · Linux · Drivers" },
   { code: "H/W", label: "Hardware", detail: "GPIO · UART · Bring-up" },
+  { code: "KRN", label: "Kernel", detail: "C/C++ · Linux · Drivers" },
+  { code: "SYS", label: "System", detail: "AOSP · Services · Performance" },
+  { code: "FWK", label: "Framework", detail: "Java · Android APIs" },
+  { code: "APP", label: "Application", detail: "React Native · TypeScript · Kotlin" },
 ];
 
 const motorolaHighlights = [
@@ -73,7 +73,7 @@ export default function App() {
 
       <header className="site-header">
         <a className="brand" href="#home" aria-label="Saw Wei Chin, home">
-          <span>SWC</span><i>05</i>
+          <span>SWC</span>
         </a>
         <button className="menu-button" type="button" aria-expanded={menuOpen} aria-controls="primary-nav" onClick={() => setMenuOpen((value) => !value)}>
           {menuOpen ? "Close" : "Menu"}
@@ -82,6 +82,7 @@ export default function App() {
           <a href="#experience" onClick={() => setMenuOpen(false)}>Experience</a>
           <a href="#impact" onClick={() => setMenuOpen(false)}>Impact</a>
           <a href="#stack" onClick={() => setMenuOpen(false)}>Stack</a>
+          <a href="#education" onClick={() => setMenuOpen(false)}>Education</a>
           <a href="#contact" onClick={() => setMenuOpen(false)}>Contact</a>
         </nav>
         <a className="status-link" href="mailto:sawweichin0412@gmail.com"><span /> Available for opportunities</a>
@@ -203,6 +204,14 @@ export default function App() {
           ))}
         </div>
 
+      </section>
+
+      <section id="education" className="education-section section-shell">
+        <div className="section-heading" data-reveal>
+          <p>04 / EDUCATION</p>
+          <h2>Academic foundation.</h2>
+          <span>Computer science study supporting work across software, systems, and embedded platforms.</span>
+        </div>
         <div className="education-grid">
           <article data-reveal>
             <p>IN PROGRESS</p>
@@ -222,7 +231,7 @@ export default function App() {
       <section id="contact" className="contact-section section-shell">
         <div className="contact-orbit" aria-hidden="true"><span /></div>
         <div data-reveal>
-          <p>04 / OPEN CHANNEL</p>
+          <p>05 / OPEN CHANNEL</p>
           <h2>Let&apos;s build dependable systems.</h2>
           <span>I&apos;m open to Software Engineer and Software Developer opportunities.</span>
           <div className="contact-actions">
